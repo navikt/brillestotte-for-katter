@@ -11,8 +11,5 @@
   "devDependencies": {
     "typescript": "^5.2.2",
     "vite": "^5.1.4"
-  },
-  "dependencies": {
-    "@navikt/ds-css": "^6.1.1"
   }
 }
