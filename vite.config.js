@@ -1,4 +1,7 @@
 /** @type {import('vite').UserConfig} */
 export default {
-  base: "https://cdn.nav.no/utvikling-admin/brillestotte-for-katter/prod",
+  base:
+    process.env.NODE_ENV === "production"
+      ? "https://cdn.nav.no/utvikling-admin/brillestotte-for-katter/prod"
+      : undefined,
 };
