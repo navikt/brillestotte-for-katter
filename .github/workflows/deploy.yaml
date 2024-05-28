@@ -15,20 +15,17 @@ jobs:
 
     steps:
       - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
+      - name: Build and push docker image to GAR
+        uses: nais/docker-build-push@main
+        id: docker-push
         with:
-          node-version: 20
-          registry-url: "https://npm.pkg.github.com"
-      - run: npm ci
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.READER_TOKEN }}
-      - run: npm run build
-      - uses: navikt/frontend/actions/spa-deploy/v2@main
-        with:
-          app: brillestotte-for-katter
+          target: runtime
           team: utvikling-admin
-          source: ./dist
-          ingress: https://brillestotte-for-katter.nav.no/
-          environment: prod
           project_id: ${{ vars.NAIS_MANAGEMENT_PROJECT_ID }}
           identity_provider: ${{ secrets.NAIS_WORKLOAD_IDENTITY_PROVIDER }}
+      - name: Deploy to nais
+        uses: nais/deploy/actions/deploy@v2
+        env:
+          CLUSTER: prod-gcp
+          IMAGE: ${{ steps.docker-push.outputs.image }}
+          RESOURCE: nais.yml

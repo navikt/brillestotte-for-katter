@@ -5,11 +5,14 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "tsc && vite build && cp -r public/* dist",
+    "build": "vite build && cp -r public/* dist",
     "preview": "vite preview"
   },
   "devDependencies": {
     "typescript": "^5.2.2",
     "vite": "^5.1.7"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
   }
 }
