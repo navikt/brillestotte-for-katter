@@ -196,14 +196,17 @@
               nettsiden.
             </p>
             <p class="navds-body-long navds-body-long--medium">
-              Du kan finne ressurser du trenger til siden, som illustrasjoner,
-              fargekoder, fonter, texter, etc. på
-              <a href="/resources">ressurssiden</a>.
+              Du kan finne <a href="#resources">ressurser</a> du trenger til
+              siden, som illustrasjoner, fargekoder, fonter, texter, etc.
+              nederst på siden.
             </p>
           </div>
         </section>
         <section>
-          <h2 class="navds-heading navds-heading--large navds-typo--spacing">
+          <h2
+            id="functionality"
+            class="navds-heading navds-heading--large navds-typo--spacing"
+          >
             Nettsiden skal ha følgende funksjonalitet
           </h2>
           <p
@@ -277,7 +280,10 @@
           </table>
         </section>
         <section>
-          <h2 class="navds-heading navds-heading--large navds-typo--spacing">
+          <h2
+            id="qualities"
+            class="navds-heading navds-heading--large navds-typo--spacing"
+          >
             Hva ser vi etter i besvarelsen?
           </h2>
           <p
@@ -337,7 +343,10 @@
           </p>
         </section>
         <section>
-          <h2 class="navds-heading navds-heading--large navds-typo--spacing">
+          <h2
+            id="submit"
+            class="navds-heading navds-heading--large navds-typo--spacing"
+          >
             Innlevering
           </h2>
           <p
@@ -349,6 +358,325 @@
             tilgang under innstillingen “Collaborators”.
           </p>
           <p class="navds-body-long navds-body-long--medium">Lykke til!</p>
+        </section>
+        <section>
+          <h2
+            id="resources"
+            class="navds-heading navds-heading--large navds-typo--spacing"
+          >
+            Ressurser
+          </h2>
+          <p
+            class="navds-body-long navds-body-long--medium navds-typo--spacing"
+          >
+            Designet finner du i
+            <a
+              class="navds-link navds-link--action"
+              href="https://www.figma.com/design/icr8YS9YdgozlGrD55JTKn/Brillekalkulator-for-katter-2.0?node-id=1-603&t=c4sJtudJTlwDyhrC-1"
+              >Figma-skissene</a
+            >. Dessverre er ikke DevMode tilgjengelig uten en Figma-konto, så vi
+            har i tillegg tilgjengeliggjort bildefiler, fargekoder og fonter som
+            er brukt på denne siden. Her kan du laste ned en zip-fil med
+            <a
+              class="navds-link navds-link--action"
+              href="illustrations.zip"
+              download="true"
+            >
+              alle illustrasjonene </a
+            >.
+          </p>
+          <p class="navds-body-long navds-body-long--medium">
+            Designet benytter
+            <a
+              class="navds-link navds-link--action"
+              href="https://aksel.nav.no/komponenter"
+              >komponenter</a
+            >
+            fra Aksel designsystemet. Det kan derfor lønne seg å bruke disse i
+            løsningen. Hvis du ikke bruker React-komponentene direkte, så kan du
+            likevel benytte stylingen ved å lenke til
+            <a
+              class="navds-link navds-link--action"
+              href="https://cdn.nav.no/aksel/@navikt/ds-css/6.8.0/index.min.css"
+            >
+              Aksel-CSS-en </a
+            >. Da kan du i de fleste tilfellene referere til fargekoder, klasser
+            eller design tokens som oppgitt i tabellene under.
+          </p>
+        </section>
+        <section>
+          <h3
+            id="colors"
+            class="navds-heading navds-heading--medium navds-typo--spacing"
+          >
+            Fargekoder
+          </h3>
+          <p
+            class="navds-body-long navds-body-long--medium navds-typo--spacing"
+          >
+            Alle fargene som er brukt på siden er oppgitt i tabellen under. De
+            fleste er hentet fra
+            <a
+              class="navds-link navds-link--action"
+              href="https://aksel.nav.no/grunnleggende/styling/design-tokens"
+              >designsystemets fargepalett</a
+            >, som du kan se til om du ønsker.
+          </p>
+          <table class="navds-table navds-table--medium">
+            <thead class="navds-table__header">
+              <tr class="navds-table__row navds-table__row--shade-on-hover">
+                <th class="navds-table__header-cell navds-label" scope="col">
+                  Farge
+                </th>
+                <th class="navds-table__header-cell navds-label" scope="col">
+                  Design Token
+                </th>
+                <th class="navds-table__header-cell navds-label" scope="col">
+                  Fargekode
+                </th>
+                <th class="navds-table__header-cell navds-label" scope="col">
+                  Elementer
+                </th>
+              </tr>
+            </thead>
+            <tbody class="navds-table__body">
+              <tr class="navds-table__row navds-table__row--shade-on-hover">
+                <th class="navds-table__header-cell navds-label" scope="row">
+                  Text/Default
+                </th>
+                <td
+                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                >
+                  --a-text-default
+                </td>
+                <td
+                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                >
+                  #23262a
+                </td>
+                <td
+                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                >
+                  Overskrifter, label, brødtekst
+                </td>
+              </tr>
+              <tr class="navds-table__row navds-table__row--shade-on-hover">
+                <th class="navds-table__header-cell navds-label" scope="row">
+                  Border/Default
+                </th>
+                <td
+                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                >
+                  --a-border-default
+                </td>
+                <td
+                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                >
+                  rgba(2,20,49,0.49)
+                </td>
+                <td
+                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                >
+                  Ramme/border
+                </td>
+              </tr>
+              <tr class="navds-table__row navds-table__row--shade-on-hover">
+                <th class="navds-table__header-cell navds-label" scope="row">
+                  Red-50
+                </th>
+                <td
+                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                >
+                  --a-red-50
+                </td>
+                <td
+                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                >
+                  #FFE6E6
+                </td>
+                <td
+                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                >
+                  Bakgrunnsfarge kalkulator
+                </td>
+              </tr>
+              <tr class="navds-table__row navds-table__row--shade-on-hover">
+                <th class="navds-table__header-cell navds-label" scope="row">
+                  Surface/Action
+                </th>
+                <td
+                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                >
+                  Ingen
+                </td>
+                <td
+                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                >
+                  #0067c5
+                </td>
+                <td
+                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                >
+                  Knappebakgrunn
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section>
+          <h3
+            id="typography"
+            class="navds-heading navds-heading--medium navds-typo--spacing"
+          >
+            Typografi
+          </h3>
+          <p
+            class="navds-body-long navds-body-long--medium navds-typo--spacing"
+          >
+            Alle fonter bruker følgende font:
+            <code style="font-size: 1rem"
+              >'Source Sans Pro', Arial, sans-serif</code
+            ><br />
+            Les mer om
+            <a
+              class="navds-link navds-link--action"
+              href="https://aksel.nav.no/komponenter/core/typography"
+              >typografi på Aksel</a
+            >.
+          </p>
+          <table class="navds-table navds-table--medium">
+            <thead class="navds-table__header">
+              <tr class="navds-table__row navds-table__row--shade-on-hover">
+                <th class="navds-table__header-cell navds-label" scope="col">
+                  Element
+                </th>
+                <th class="navds-table__header-cell navds-label" scope="col">
+                  Klasse
+                </th>
+                <th class="navds-table__header-cell navds-label" scope="col">
+                  Font størrelse
+                </th>
+                <th class="navds-table__header-cell navds-label" scope="col">
+                  Elementer
+                </th>
+              </tr>
+            </thead>
+            <tbody class="navds-table__body">
+              <tr class="navds-table__row navds-table__row--shade-on-hover">
+                <th class="navds-table__header-cell navds-label" scope="row">
+                  Heading/X-Large
+                </th>
+                <td
+                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                >
+                  navds-heading navds-heading--xlarge
+                </td>
+                <td
+                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                >
+                  2rem
+                </td>
+                <td
+                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                >
+                  Sidetittel
+                </td>
+              </tr>
+              <tr class="navds-table__row navds-table__row--shade-on-hover">
+                <th class="navds-table__header-cell navds-label" scope="row">
+                  Heading/Large
+                </th>
+                <td
+                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                >
+                  navds-heading navds-heading--large
+                </td>
+                <td
+                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                >
+                  1.75rem
+                </td>
+                <td
+                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                >
+                  Overskrifter
+                </td>
+              </tr>
+              <tr class="navds-table__row navds-table__row--shade-on-hover">
+                <th class="navds-table__header-cell navds-label" scope="row">
+                  Heading/Medium
+                </th>
+                <td
+                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                >
+                  navds-heading navds-heading--medium
+                </td>
+                <td
+                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                >
+                  1.5rem
+                </td>
+                <td
+                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                >
+                  Underoverskrifter
+                </td>
+              </tr>
+              <tr class="navds-table__row navds-table__row--shade-on-hover">
+                <th class="navds-table__header-cell navds-label" scope="row">
+                  BodyLong/Medium
+                </th>
+                <td
+                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                >
+                  navds-body-long navds-body-long--medium
+                </td>
+                <td
+                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                >
+                  1rem
+                </td>
+                <td
+                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                >
+                  Brødtekst
+                </td>
+              </tr>
+              <tr class="navds-table__row navds-table__row--shade-on-hover">
+                <th class="navds-table__header-cell navds-label" scope="row">
+                  Label/Medium
+                </th>
+                <td
+                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                >
+                  navds-label
+                </td>
+                <td
+                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                >
+                  1rem
+                </td>
+                <td
+                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                >
+                  Label
+                </td>
+              </tr>
+            </tbody>
+          </table>
+        </section>
+        <section>
+          <h3
+            id="sizes"
+            class="navds-heading navds-heading--medium navds-typo--spacing"
+          >
+            Størrelser
+          </h3>
+          <p>
+            Det er ikke viktig at resultatet blir "pixel-perfekt". Gå derfor for
+            en tilnærming til designet, heller enn å bruke tid på at det blir
+            helt likt skissene.
+          </p>
         </section>
       </main>
     </div>
