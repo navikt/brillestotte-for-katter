@@ -9,6 +9,6 @@ metadata:
 
 spec:
   ingresses:
-    - https://brillestotte-for-katter.nav.no/
+    - https://brillestøtte-for-katter.nav.no/
   image: {{image}}
   port: 3000
