@@ -215,14 +215,15 @@
           >
             Nettsiden skal ha følgende funksjonalitet
           </h2>
-          <p
-            class="navds-body-long navds-body-long--medium navds-typo--spacing"
-          >
+          <p class="navds-body-long navds-body-long--medium">
             For å få vite hvor mye brillestøtte katten har rett på må man svare
             på hva kattens sylinder- og sfæriske styrke er. Styrken kan velges i
-            inkrementer på 0,25. Deretter skal støtten beregnes i henhold til
-            tabellen under. Hvis katten ikke har rett til brillestøtte, så vises
-            alternativ tilbakemelding i henhold til skissene.
+            inkrementer på 0,25 fra henholdsvis -1 til -6 (sylinder) og 1 til 10
+            (sfære). Det skal også være valg for over og under disse verdiene.
+            Når bruker trykker på "Kalkuler brillestøtte" skal støtten beregnes
+            i henhold til tabellen under. Hvis katten ikke har rett til
+            brillestøtte, så vises alternativ tilbakemelding i henhold til
+            skissene.
           </p>
           <table class="navds-table navds-table--medium">
             <thead class="navds-table__header">
@@ -231,41 +232,32 @@
                   Styrke
                 </th>
                 <th class="navds-table__header-cell navds-label" scope="col">
-                  Sats 1 (750 kr)
+                  Ingen støtte
                 </th>
                 <th class="navds-table__header-cell navds-label" scope="col">
-                  Sats 2 (1750 kr)
+                  Sats 1<br />
+                  (750 kr)
                 </th>
                 <th class="navds-table__header-cell navds-label" scope="col">
-                  Sats 3 (2650 kr)
+                  Sats 2<br />
+                  (1750 kr)
+                </th>
+                <th class="navds-table__header-cell navds-label" scope="col">
+                  Sats 3<br />
+                  (2650 kr)
                 </th>
               </tr>
             </thead>
             <tbody class="navds-table__body">
               <tr class="navds-table__row navds-table__row--shade-on-hover">
                 <th class="navds-table__header-cell navds-label" scope="row">
-                  Sfære
-                </th>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  1 til 5
-                </td>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  5,25 til 10
-                </td>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  Fra 10,25 og oppover
-                </td>
-              </tr>
-              <tr class="navds-table__row navds-table__row--shade-on-hover">
-                <th class="navds-table__header-cell navds-label" scope="row">
                   Sylinder
                 </th>
+                <td
+                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                >
+                  Over -1
+                </td>
                 <td
                   class="navds-table__data-cell navds-body-short navds-body-short--medium"
                 >
@@ -279,7 +271,32 @@
                 <td
                   class="navds-table__data-cell navds-body-short navds-body-short--medium"
                 >
-                  Fra -6,25 og under
+                  Under -6
+                </td>
+              </tr>
+              <tr class="navds-table__row navds-table__row--shade-on-hover">
+                <th class="navds-table__header-cell navds-label" scope="row">
+                  Sfære
+                </th>
+                <td
+                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                >
+                  Under 1
+                </td>
+                <td
+                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                >
+                  1 til 5
+                </td>
+                <td
+                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                >
+                  5,25 til 10
+                </td>
+                <td
+                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                >
+                  Over 10
                 </td>
               </tr>
             </tbody>
