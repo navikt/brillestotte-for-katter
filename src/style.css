@@ -25,3 +25,7 @@
     max-width: 70ch;
   }
 }
+
+.navds-link {
+  text-underline-position: under;
+}
