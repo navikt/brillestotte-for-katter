@@ -4,15 +4,9 @@
   "version": "0.0.0",
   "type": "module",
   "scripts": {
-    "dev": "vite",
-    "build": "vite build && cp -r public/* dist",
-    "preview": "vite preview"
-  },
-  "devDependencies": {
-    "typescript": "^5.2.2",
-    "vite": "^5.1.7"
+    "start": "http-server public -p 3000"
   },
   "dependencies": {
-    "express": "^4.19.2"
+    "http-server": "14.1.1"
   }
 }
