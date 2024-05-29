@@ -222,82 +222,84 @@
             og med". Hvis katten ikke har rett til brillestøtte, så vises
             alternativ tilbakemelding som beskrevet i skissene.
           </p>
-          <table class="navds-table navds-table--medium">
-            <thead class="navds-table__header">
-              <tr class="navds-table__row navds-table__row--shade-on-hover">
-                <th class="navds-table__header-cell navds-label" scope="col">
-                  Styrke
-                </th>
-                <th class="navds-table__header-cell navds-label" scope="col">
-                  Ingen støtte
-                </th>
-                <th class="navds-table__header-cell navds-label" scope="col">
-                  Sats 1<br />
-                  (750 kr)
-                </th>
-                <th class="navds-table__header-cell navds-label" scope="col">
-                  Sats 2<br />
-                  (1750 kr)
-                </th>
-                <th class="navds-table__header-cell navds-label" scope="col">
-                  Sats 3<br />
-                  (2650 kr)
-                </th>
-              </tr>
-            </thead>
-            <tbody class="navds-table__body">
-              <tr class="navds-table__row navds-table__row--shade-on-hover">
-                <th class="navds-table__header-cell navds-label" scope="row">
-                  Sylinder
-                </th>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  Over -1
-                </td>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  -1 til -3
-                </td>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  -3,25 til -6
-                </td>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  Under -6
-                </td>
-              </tr>
-              <tr class="navds-table__row navds-table__row--shade-on-hover">
-                <th class="navds-table__header-cell navds-label" scope="row">
-                  Sfære
-                </th>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  Under 1
-                </td>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  1 til 5
-                </td>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  5,25 til 10
-                </td>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  Over 10
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-wrapper">
+            <table class="navds-table navds-table--medium">
+              <thead class="navds-table__header">
+                <tr class="navds-table__row navds-table__row--shade-on-hover">
+                  <th class="navds-table__header-cell navds-label" scope="col">
+                    Styrke
+                  </th>
+                  <th class="navds-table__header-cell navds-label" scope="col">
+                    Ingen støtte
+                  </th>
+                  <th class="navds-table__header-cell navds-label" scope="col">
+                    Sats 1<br />
+                    (750 kr)
+                  </th>
+                  <th class="navds-table__header-cell navds-label" scope="col">
+                    Sats 2<br />
+                    (1750 kr)
+                  </th>
+                  <th class="navds-table__header-cell navds-label" scope="col">
+                    Sats 3<br />
+                    (2650 kr)
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="navds-table__body">
+                <tr class="navds-table__row navds-table__row--shade-on-hover">
+                  <th class="navds-table__header-cell navds-label" scope="row">
+                    Sylinder
+                  </th>
+                  <td
+                    class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                  >
+                    Over -1
+                  </td>
+                  <td
+                    class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                  >
+                    -1 til -3
+                  </td>
+                  <td
+                    class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                  >
+                    -3,25 til -6
+                  </td>
+                  <td
+                    class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                  >
+                    Under -6
+                  </td>
+                </tr>
+                <tr class="navds-table__row navds-table__row--shade-on-hover">
+                  <th class="navds-table__header-cell navds-label" scope="row">
+                    Sfære
+                  </th>
+                  <td
+                    class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                  >
+                    Under 1
+                  </td>
+                  <td
+                    class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                  >
+                    1 til 5
+                  </td>
+                  <td
+                    class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                  >
+                    5,25 til 10
+                  </td>
+                  <td
+                    class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                  >
+                    Over 10
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </section>
         <section>
           <h2 class="navds-heading navds-heading--large navds-typo--spacing">
@@ -370,7 +372,7 @@
           </p>
           <p class="navds-body-long navds-body-long--medium">Lykke til!</p>
         </section>
-        <hr style="width: 100%" />
+        <hr />
         <section>
           <h2
             id="resources"
@@ -391,9 +393,7 @@
             inspisere elementene for å finne fargekoder, fonter, størrelser og
             hvilke komponenter som er brukt.
           </p>
-          <p
-            class="navds-body-long navds-body-long--medium navds-typo--spacing"
-          >
+          <p class="navds-body-long navds-body-long--medium">
             Om du ikke vil bruke Figma kan du laste ned
             <a class="navds-link" href="/skisser.zip">skissene som PDF her</a>.
             I seksjonene nedenfor her har vi også listet opp bildefiler,
@@ -430,7 +430,7 @@
           <h3 class="navds-heading navds-heading--medium navds-typo--spacing">
             Illustrasjoner
           </h3>
-          <p>
+          <p class="navds-body-long navds-body-long--medium">
             Vi har samlet
             <a class="navds-link" href="/illustrations.zip" download="true">
               alle illustrasjonene
@@ -442,9 +442,7 @@
           <h3 class="navds-heading navds-heading--medium navds-typo--spacing">
             Fargekoder
           </h3>
-          <p
-            class="navds-body-long navds-body-long--medium navds-typo--spacing"
-          >
+          <p class="navds-body-long navds-body-long--medium">
             Alle fargene som er brukt på siden er oppgitt i tabellen under. De
             fleste er hentet fra
             <a
@@ -453,114 +451,114 @@
               >designsystemets fargepalett</a
             >, som du kan se til om du ønsker.
           </p>
-          <table class="navds-table navds-table--medium">
-            <thead class="navds-table__header">
-              <tr class="navds-table__row navds-table__row--shade-on-hover">
-                <th class="navds-table__header-cell navds-label" scope="col">
-                  Farge
-                </th>
-                <th class="navds-table__header-cell navds-label" scope="col">
-                  Design Token
-                </th>
-                <th class="navds-table__header-cell navds-label" scope="col">
-                  Fargekode
-                </th>
-                <th class="navds-table__header-cell navds-label" scope="col">
-                  Elementer
-                </th>
-              </tr>
-            </thead>
-            <tbody class="navds-table__body">
-              <tr class="navds-table__row navds-table__row--shade-on-hover">
-                <th class="navds-table__header-cell navds-label" scope="row">
-                  Text/Default
-                </th>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  --a-text-default
-                </td>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  #23262a
-                </td>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  Overskrifter, label, brødtekst
-                </td>
-              </tr>
-              <tr class="navds-table__row navds-table__row--shade-on-hover">
-                <th class="navds-table__header-cell navds-label" scope="row">
-                  Border/Default
-                </th>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  --a-border-default
-                </td>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  rgba(2,20,49,0.49)
-                </td>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  Ramme/border
-                </td>
-              </tr>
-              <tr class="navds-table__row navds-table__row--shade-on-hover">
-                <th class="navds-table__header-cell navds-label" scope="row">
-                  Red-50
-                </th>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  --a-red-50
-                </td>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  #FFE6E6
-                </td>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  Bakgrunnsfarge kalkulator
-                </td>
-              </tr>
-              <tr class="navds-table__row navds-table__row--shade-on-hover">
-                <th class="navds-table__header-cell navds-label" scope="row">
-                  Surface/Action
-                </th>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  Ingen
-                </td>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  #0067c5
-                </td>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  Knappebakgrunn
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-wrapper">
+            <table class="navds-table navds-table--medium">
+              <thead class="navds-table__header">
+                <tr class="navds-table__row navds-table__row--shade-on-hover">
+                  <th class="navds-table__header-cell navds-label" scope="col">
+                    Farge
+                  </th>
+                  <th class="navds-table__header-cell navds-label" scope="col">
+                    Design Token
+                  </th>
+                  <th class="navds-table__header-cell navds-label" scope="col">
+                    Fargekode
+                  </th>
+                  <th class="navds-table__header-cell navds-label" scope="col">
+                    Elementer
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="navds-table__body">
+                <tr class="navds-table__row navds-table__row--shade-on-hover">
+                  <th class="navds-table__header-cell navds-label" scope="row">
+                    Text/Default
+                  </th>
+                  <td
+                    class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                  >
+                    --a-text-default
+                  </td>
+                  <td
+                    class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                  >
+                    #23262a
+                  </td>
+                  <td
+                    class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                  >
+                    Overskrifter, label, brødtekst
+                  </td>
+                </tr>
+                <tr class="navds-table__row navds-table__row--shade-on-hover">
+                  <th class="navds-table__header-cell navds-label" scope="row">
+                    Border/Default
+                  </th>
+                  <td
+                    class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                  >
+                    --a-border-default
+                  </td>
+                  <td
+                    class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                  >
+                    rgba(2,20,49,0.49)
+                  </td>
+                  <td
+                    class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                  >
+                    Ramme/border
+                  </td>
+                </tr>
+                <tr class="navds-table__row navds-table__row--shade-on-hover">
+                  <th class="navds-table__header-cell navds-label" scope="row">
+                    Red-50
+                  </th>
+                  <td
+                    class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                  >
+                    --a-red-50
+                  </td>
+                  <td
+                    class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                  >
+                    #FFE6E6
+                  </td>
+                  <td
+                    class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                  >
+                    Bakgrunnsfarge kalkulator
+                  </td>
+                </tr>
+                <tr class="navds-table__row navds-table__row--shade-on-hover">
+                  <th class="navds-table__header-cell navds-label" scope="row">
+                    Surface/Action
+                  </th>
+                  <td
+                    class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                  >
+                    Ingen
+                  </td>
+                  <td
+                    class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                  >
+                    #0067c5
+                  </td>
+                  <td
+                    class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                  >
+                    Knappebakgrunn
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </section>
         <section>
           <h3 class="navds-heading navds-heading--medium navds-typo--spacing">
             Typografi
           </h3>
-          <p
-            class="navds-body-long navds-body-long--medium navds-typo--spacing"
-          >
+          <p class="navds-body-long navds-body-long--medium">
             Alle fonter bruker følgende font:
             <code style="font-size: 1rem"
               >'Source Sans Pro', Arial, sans-serif</code
@@ -572,132 +570,106 @@
               >typografi på Aksel</a
             >.
           </p>
-          <table class="navds-table navds-table--medium">
-            <thead class="navds-table__header">
-              <tr class="navds-table__row navds-table__row--shade-on-hover">
-                <th class="navds-table__header-cell navds-label" scope="col">
-                  Element
-                </th>
-                <th class="navds-table__header-cell navds-label" scope="col">
-                  Klasse
-                </th>
-                <th class="navds-table__header-cell navds-label" scope="col">
-                  Font størrelse
-                </th>
-                <th class="navds-table__header-cell navds-label" scope="col">
-                  Elementer
-                </th>
-              </tr>
-            </thead>
-            <tbody class="navds-table__body">
-              <tr class="navds-table__row navds-table__row--shade-on-hover">
-                <th class="navds-table__header-cell navds-label" scope="row">
-                  Heading/X-Large
-                </th>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  navds-heading navds-heading--xlarge
-                </td>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  2rem
-                </td>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  Sidetittel
-                </td>
-              </tr>
-              <tr class="navds-table__row navds-table__row--shade-on-hover">
-                <th class="navds-table__header-cell navds-label" scope="row">
-                  Heading/Large
-                </th>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  navds-heading navds-heading--large
-                </td>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  1.75rem
-                </td>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  Overskrifter
-                </td>
-              </tr>
-              <tr class="navds-table__row navds-table__row--shade-on-hover">
-                <th class="navds-table__header-cell navds-label" scope="row">
-                  Heading/Medium
-                </th>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  navds-heading navds-heading--medium
-                </td>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  1.5rem
-                </td>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  Underoverskrifter
-                </td>
-              </tr>
-              <tr class="navds-table__row navds-table__row--shade-on-hover">
-                <th class="navds-table__header-cell navds-label" scope="row">
-                  BodyLong/Medium
-                </th>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  navds-body-long navds-body-long--medium
-                </td>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  1rem
-                </td>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  Brødtekst
-                </td>
-              </tr>
-              <tr class="navds-table__row navds-table__row--shade-on-hover">
-                <th class="navds-table__header-cell navds-label" scope="row">
-                  Label/Medium
-                </th>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  navds-label
-                </td>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  1rem
-                </td>
-                <td
-                  class="navds-table__data-cell navds-body-short navds-body-short--medium"
-                >
-                  Label
-                </td>
-              </tr>
-            </tbody>
-          </table>
+          <div class="table-wrapper">
+            <table class="navds-table navds-table--medium">
+              <thead class="navds-table__header">
+                <tr class="navds-table__row navds-table__row--shade-on-hover">
+                  <th class="navds-table__header-cell navds-label" scope="col">
+                    Element
+                  </th>
+                  <th class="navds-table__header-cell navds-label" scope="col">
+                    Klasse
+                  </th>
+                  <th class="navds-table__header-cell navds-label" scope="col">
+                    Fontstørrelse
+                  </th>
+                </tr>
+              </thead>
+              <tbody class="navds-table__body">
+                <tr class="navds-table__row navds-table__row--shade-on-hover">
+                  <th class="navds-table__header-cell navds-label" scope="row">
+                    Sidetittel
+                  </th>
+                  <td
+                    class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                  >
+                    navds-heading navds-heading--xlarge
+                  </td>
+                  <td
+                    class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                  >
+                    2rem
+                  </td>
+                </tr>
+                <tr class="navds-table__row navds-table__row--shade-on-hover">
+                  <th class="navds-table__header-cell navds-label" scope="row">
+                    Overskrift
+                  </th>
+                  <td
+                    class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                  >
+                    navds-heading navds-heading--large
+                  </td>
+                  <td
+                    class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                  >
+                    1.75rem
+                  </td>
+                </tr>
+                <tr class="navds-table__row navds-table__row--shade-on-hover">
+                  <th class="navds-table__header-cell navds-label" scope="row">
+                    Underoverskrift
+                  </th>
+                  <td
+                    class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                  >
+                    navds-heading navds-heading--medium
+                  </td>
+                  <td
+                    class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                  >
+                    1.5rem
+                  </td>
+                </tr>
+                <tr class="navds-table__row navds-table__row--shade-on-hover">
+                  <th class="navds-table__header-cell navds-label" scope="row">
+                    Brødtekst
+                  </th>
+                  <td
+                    class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                  >
+                    navds-body-long navds-body-long--medium
+                  </td>
+                  <td
+                    class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                  >
+                    1rem
+                  </td>
+                </tr>
+                <tr class="navds-table__row navds-table__row--shade-on-hover">
+                  <th class="navds-table__header-cell navds-label" scope="row">
+                    Label
+                  </th>
+                  <td
+                    class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                  >
+                    navds-label
+                  </td>
+                  <td
+                    class="navds-table__data-cell navds-body-short navds-body-short--medium"
+                  >
+                    1rem
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
         </section>
         <section>
           <h3 class="navds-heading navds-heading--medium navds-typo--spacing">
             Størrelser
           </h3>
-          <p>
+          <p class="navds-body-long navds-body-long--medium">
             Det er ikke viktig at resultatet blir "pikselperfekt". Gå derfor for
             en tilnærming til designet, heller enn å bruke tid på at det blir
             helt likt skissene.
